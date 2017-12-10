@@ -2,7 +2,7 @@
 @section('content')
 
     <h1>Create Contact</h1>
-    {!! Form::open(['action' => 'ContactController@store', 'method' => 'POST']) !!}
+    {!! Form::open(['action' => 'ContactsController@store', 'method' => 'POST']) !!}
         <div class="form-group">
             {{Form::label('firstname', 'Firstname')}}
             {{Form::text('firstname', '', ['class' => 'form-control', 'placeholder' => 'Firstname'])}}

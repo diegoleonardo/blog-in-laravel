@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Contact;
 use DB;
 
-class ContactController extends Controller
+class ContactsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +26,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('contacts.create');
+        return view("contacts.create");
     }
 
     /**
@@ -44,10 +44,10 @@ class ContactController extends Controller
         ]);
 
         $contact = new Contact();
-        $contact->nome = $request->input('firstname');
-        $contact->sobrenome = $request->input('lastname');
+        $contact->firstname = $request->input('firstname');
+        $contact->lastname = $request->input('lastname');
         $contact->email = $request->input('email');
-        $contact->telefone = $request->input('phone');
+        $contact->phone = $request->input('phone');
         $contact->save();
 
         return redirect('/pages')->with('success', 'Contact created');
