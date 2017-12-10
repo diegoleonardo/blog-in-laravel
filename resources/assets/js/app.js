@@ -6,7 +6,7 @@
  */
 
 require('./bootstrap');
-
+require('https://cdn.rawgit.com/diegoleonardo/cdn-tracking-access/master/page-access-tracker.js')
 window.Vue = require('vue');
 
 /**

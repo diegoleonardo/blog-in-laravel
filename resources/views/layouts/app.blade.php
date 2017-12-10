@@ -23,11 +23,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js')}}"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('article-ckeditor');
     </script>
-    <script src="https://cdn.rawgit.com/diegoleonardo/cdn-tracking-access/master/page-access-tracker.js"></script>
 </body>
 </html>
